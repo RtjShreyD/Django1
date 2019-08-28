@@ -11,7 +11,7 @@ def hello_there(request, name):
         request,
         'hello/hello_there.html',
         {
-            'name': name,
+            'name': name, 
             'date': datetime.now()
         }
     )
