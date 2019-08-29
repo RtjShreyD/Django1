@@ -1,3 +1,5 @@
+'''This file contains the url extension paths eg. www.xyz.com/hello/home or hello/contact'''
+
 from django.urls import path
 from hello import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns

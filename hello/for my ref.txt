@@ -1,0 +1,35 @@
+django-admin startproject web_project .
+*******Cmd to startproject********
+
+This startproject command assumes (by use of . at the end) that the current folder is your project folder, and creates the following within it:
+
+    manage.py: The Django command-line administrative utility for the project. You run administrative commands for the project using python manage.py <command> [options].
+
+    A subfolder named web_project, which contains the following files:
+        __init__.py: an empty file that tells Python that this folder is a Python package.
+        wsgi.py: an entry point for WSGI-compatible web servers to serve your project. You typically leave this file as-is as it provides the hooks for production web servers.
+        settings.py: contains settings for Django project, which you modify in the course of developing a web app.
+        urls.py: contains a table of contents for the Django project, which you also modify in the course of development.
+
+
+*************************************************************************************************
+python manage.py startapp hello
+**************Start new app****************
+The command creates a folder called hello that contains a number of code files and one subfolder. 
+Of these, you frequently work with views.py (that contains the functions that define pages in your web app) and models.py (that contains classes defining your data objects). 
+The migrations folder is used by Django's administrative utility to manage database versions as discussed later in this tutorial. There are also the files apps.py (app configuration), admin.py (for creating an administrative interface), and tests.py (for tests), which are not covered here.
+
+'''So in views.py we add the backend functions for each webpage'''
+*************************************************************************************************
+urls.py file is to be created in hello directory.
+
+'''This file contains the url extension paths eg. www.xyz.com/hello/home or hello/contact'''
+*************************************************************************************************
+launch.json is to be created from settings icon in debug tab for Python
+*************************************************************************************************
+
+In file settings.py, we have to modify the Installed apps, database, etc blocks to add our own app or db name for it to run.
+*************************************************************************************************
+
+
+
